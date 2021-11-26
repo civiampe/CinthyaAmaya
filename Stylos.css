@@ -1,0 +1,412 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+ul, nav{
+    list-style: none;
+}
+body{
+    font: normal 50px "Lato", Arial, sans-serif;
+    color:#555;
+    text-align: center;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    cursor:cursor;
+    opacity: 0.6;
+    color: #979495;
+}
+a:hover{
+    opacity: 1;
+    color: #5c585a;
+}
+
+section{
+    background-color: #fff;
+    padding: 35px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+section p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;    
+    color: #141938;
+    font-family: "Lato", Arial, sans-serif;
+    font: normal 20px "Lato", Arial, sans-serif;
+}
+section h3{
+    color:rgb(69, 131, 94);
+    text-transform: capitalize;
+    font: 35px;
+    font-weight: 900;
+    font-family: "Lato", Arial, sans-serif;
+    margin-bottom: 35px;
+}
+
+@media(max-width: 1000px){
+    section{
+        padding:100px 50px;
+    }
+}
+
+@media(max-width: 600px){
+    section{
+        padding:80px 30px;
+    }
+}
+.smallerheadline{
+    font-size:  75%;
+}
+
+ul.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1.titulo{
+    font-size: 150px;
+}
+/*--------------
+HEADER
+---------------*/
+header{
+    background-color: rgb(255, 170, 0);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    color: #f1f7f4;
+    padding: 10px 100px 10px;
+    display:flex;
+    justify-content: space-around;
+    font: normal 35px "Lato", Arial, sans-serif;
+  }
+header nav ul{
+    display: flex;
+}
+header nav li{
+    margin: 0 15px;
+}
+header nav li:first-child{
+    margin-left: 0;
+}
+.round{
+    border: 6px solid #b4d6b8;
+    border-radius: 50%;
+}
+/*--------------
+Inicio 
+---------------*/
+.Inicio{
+    background-color: transparent;
+    position:relative;
+    justify-content: center;
+    min-height: 100vh;
+    color:#fff;
+    text-align: center;
+    font: normal 80px "inherit", Arial, sans-serif;
+    color:rgb(247, 241, 241);
+    text-align: center;
+
+}
+
+.Inicio .background-image{
+    background: url(/Imagenes/intro.jpg);
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-color: #979495;
+}
+
+.Inicio .background-image:after{
+    content: '';
+    position:fixed;
+    top:0;
+    left: 0;
+     width: 100%;
+    height: 100%;
+    background-color: #414A4F;
+    opacity: 0.75;
+}
+@media(max-width: 800px){
+    .Inicio{
+        min-height: 600px;
+    }
+    .Inicio h1{
+        font-size: 1000;
+
+    }
+
+}
+
+/*--------------
+Vestidos
+---------------*/
+.Vestidos{
+
+    color: rgb(255, 255, 255);
+    
+
+}
+
+
+.Vestidos .grid li{
+    padding: 20px;
+    height: 1187px;
+    border-radius: 3px;    
+    background-clip: content-box;
+    background-size:cover;
+    background-position: center;
+    background-color: rgb(80, 79, 79);
+}
+
+.Vestidos .grid li.small{
+    flex-basis: 50%;
+}
+
+.Vestidos .grid li.large{
+    flex-basis: 50%;
+}
+
+.Vestidos-01{
+    background-image: url(Imagenes/Vestidos-01.jpg);
+}
+.Vestidos-02{
+    background-image: url(Imagenes/Vestidos-02.jpg);
+}
+.Vestidos-03{
+    background-image: url(Imagenes/Vestidos-03.jpg);
+}
+.Vestidos-04{
+    background-image: url(Imagenes/Vestidos-04.jpg);
+}
+@media (max-width: 500){
+    .promociones .grid li.small, .promociones .grid li.large{
+      flex-basis: 100%;  
+    }  
+}
+
+/*--------------
+Traje
+---------------*/
+.Traje{
+
+    color: rgb(255, 255, 255);
+}
+.Traje .grid li{
+    padding: 20px;
+    height: 1187px;
+    border-radius: 3px;    
+    background-clip: content-box;
+    background-size:cover;
+    background-position: center;
+    background-color: rgb(80, 79, 79);
+}
+.Traje .grid li.small{
+    flex-basis: 50%;
+}
+.Traje .grid li.large{
+    flex-basis: 50%;
+}
+
+
+.Traje-01{
+    
+    background-image: url(Imagenes/Traje-01.jpg);
+}
+.Traje-02{
+    
+    background-image: url(Imagenes/Traje-02.jpg);
+}
+.Traje-03{
+    
+    background-image: url(Imagenes/Traje-03.jpg);
+}
+.Traje-04{
+    
+    background-image: url(Imagenes/Traje-04.jpg);
+}
+
+
+/*--------------
+Buquets
+---------------*/
+.Buquets{
+
+    color: rgb(255, 255, 255);
+}
+.Buquets .grid li{
+    padding: 20px;
+    height: 1187px;
+    border-radius: 3px;    
+    background-clip: content-box;
+    background-size:cover;
+    background-position: center;
+    background-color: rgb(80, 79, 79);
+}
+.Buquets .grid li.small{
+    flex-basis: 50%;
+}
+.Buquets .grid li.large{
+    flex-basis: 50%;
+}
+
+
+.Buquets-01{
+    
+    background-image: url(Imagenes/buquets-01.jpg);
+}
+.Buquets-02{
+    
+    background-image: url(Imagenes/buquets-02.jpg);
+}
+.Buquets-03{
+    
+    background-image: url(Imagenes/buquets-03.jpg);
+}
+.Buquets-04{
+    
+    background-image: url(Imagenes/buquets-04.jpg);
+}
+
+/*--------------
+Decoracion
+---------------*/
+.Decoracion{
+
+    color: rgb(255, 255, 255);
+}
+.Decoracion .grid li{
+    padding: 20px;
+    height: 581px;
+    border-radius: 3px;    
+    background-clip: content-box;
+    background-size:cover;
+    background-position: center;
+    background-color: rgb(80, 79, 79);
+}
+.Decoracion .grid li.small{
+    flex-basis: 50%;
+}
+.Decoracion .grid li.large{
+    flex-basis: 50%;
+}
+
+
+.Decoracion-01{
+    
+    background-image: url(Imagenes/Decoracion-01.jpg);
+}
+.Decoracion-02{
+    
+    background-image: url(Imagenes/Decoracion-02.jpg);
+}
+.Decoracion-03{
+    
+    background-image: url(Imagenes/Decoracion-03.jpg);
+}
+.Decoracion-04{
+    
+    background-image: url(Imagenes/Decoracion-04.jpg);
+}
+
+/*--------------
+FOOTER
+---------------*/
+
+footer{
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #a9b1d1;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+}
+
+footer ul{
+    display:flex;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+footer ul li{
+    margin: 0 8px;
+}
+
+footer ul li:first-child{
+    margin-left: 0;
+}
+
+footer ul li:last-child{
+    margin-right: 0;
+}
+
+footer p{
+    font-size: 14px;
+    color: #a9b1d1;
+    margin-bottom: 10px;
+}
+
+footer p a{
+    color: #fff;
+}
+
+footer .copy-right{
+    display: flex;
+}
+
+footer .copy-right-text{
+    padding-top: 60px;
+}
+
+footer .logo{
+    margin-right: 20px;
+}
+
+@media (max-width: 700px){
+    footer{
+        padding: 80px 15px;
+    }
+}
+
+/*Boton*/
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
