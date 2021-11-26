@@ -123,7 +123,7 @@ Inicio
 }
 
 .Inicio .background-image{
-    background: url(/Imagenes/intro.jpg);
+    background: url(Imagenes/intro.jpg);
     position:fixed;
     top:0;
     left: 0;
